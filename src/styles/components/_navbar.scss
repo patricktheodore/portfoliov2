@@ -1,0 +1,28 @@
+@use '../abstracts/' as *;
+
+body {
+    background-color: $color-bg;
+}
+
+.tester {
+    font-size: 20px;
+    color: $color-font-primary;
+}
+
+p {
+    font-size: 12px;
+}
+
+h1 {
+    font-family: $font-heading;
+    font-weight: 700;
+    font-size: 40px;
+    color: $color-font-primary;
+    line-height: 0.8;
+    letter-spacing: -3px;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: $color-primary;
+}
