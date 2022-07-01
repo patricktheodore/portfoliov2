@@ -1,42 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;700&family=Montserrat&family=Taviraj:wght@100&display=swap");
-body {
-  background-color: #353B3C;
-}
-
-.tester {
-  font-size: 20px;
-  color: #EFE9F4;
-}
-
-p {
-  font-size: 12px;
-}
-
-h1 {
-  font-family: "Hind Madurai", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  color: #EFE9F4;
-  line-height: 0.8;
-  letter-spacing: -3px;
-}
-
-h1:hover {
-  cursor: pointer;
-  color: #63b995;
-}
-
-body {
-  margin: 0;
-}
-
 .logo {
+  height: 50px;
+  width: auto;
+  margin: 1rem;
   fill: #EFE9F4;
   color: #EFE9F4;
   stroke: #EFE9F4;
   transition: all 0.2s;
 }
-
 .logo:hover {
   cursor: pointer;
   fill: #63b995;
@@ -44,7 +15,7 @@ body {
   stroke: #63b995;
 }
 
-ul {
+.nav-list {
   list-style: none;
 }
 
@@ -56,8 +27,12 @@ ul {
   color: #EFE9F4;
   transition: all 0.2s;
 }
-
 .nav-item:hover {
   cursor: pointer;
   color: #63b995;
+}
+
+body {
+  margin: 0;
+  background-color: #353B3C;
 }/*# sourceMappingURL=styles.css.map */

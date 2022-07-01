@@ -3,36 +3,6 @@
 
 body {
     margin: 0;  
+    background-color: $color-bg;
 }
 
-.logo {
-    fill: $color-font-primary;
-    color: $color-font-primary;
-    stroke: $color-font-primary;
-    transition: all 0.2s;
-}
-
-.logo:hover {
-    cursor: pointer;
-    fill: $color-primary;
-    color: $color-primary;
-    stroke: $color-primary;
-}
-
-ul {
-    list-style: none;
-}
-
-.nav-item {
-    font-family: $font-heading;
-    font-weight: 700;
-    font-size: 24px;
-    letter-spacing: -1px;
-    color: $color-font-primary;
-    transition: all 0.2s;
-}
-
-.nav-item:hover {
-    cursor: pointer;
-    color: $color-primary;
-}

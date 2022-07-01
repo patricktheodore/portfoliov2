@@ -1,28 +1,37 @@
 @use '../abstracts/' as *;
 
-body {
-    background-color: $color-bg;
-}
-
-.tester {
-    font-size: 20px;
+.logo {
+    height: 50px;
+    width: auto;
+    margin: 1rem;
+    fill: $color-font-primary;
     color: $color-font-primary;
+    stroke: $color-font-primary;
+    transition: all 0.2s;
+
+    &:hover {
+        cursor: pointer;
+        fill: $color-primary;
+        color: $color-primary;
+        stroke: $color-primary;
+    }
+}    
+
+
+.nav-list {
+    list-style: none;
 }
 
-p {
-    font-size: 12px;
-}
-
-h1 {
+.nav-item {
     font-family: $font-heading;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 24px;
+    letter-spacing: -1px;
     color: $color-font-primary;
-    line-height: 0.8;
-    letter-spacing: -3px;
-}
+    transition: all 0.2s;
 
-h1:hover {
-    cursor: pointer;
-    color: $color-primary;
+    &:hover {
+        cursor: pointer;
+        color: $color-primary;
+    }
 }
