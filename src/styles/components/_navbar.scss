@@ -1,13 +1,13 @@
 @use '../abstracts/' as *;
 
 .logo {
-    height: 50px;
+    height: 40px;
     width: auto;
-    margin: 1rem;
     fill: $color-font-primary;
     color: $color-font-primary;
     stroke: $color-font-primary;
     transition: all 0.2s;
+    margin-left: 4rem;
 
     &:hover {
         cursor: pointer;
@@ -15,20 +15,34 @@
         color: $color-primary;
         stroke: $color-primary;
     }
-}    
+}
 
+.nav {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
 
 .nav-list {
     list-style: none;
+    padding: 0;
+    margin-right: 3rem;
 }
 
 .nav-item {
     font-family: $font-heading;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     letter-spacing: -1px;
     color: $color-font-primary;
     transition: all 0.2s;
+    display: inline;
+    margin: 0 1rem;
 
     &:hover {
         cursor: pointer;
