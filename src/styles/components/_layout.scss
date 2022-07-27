@@ -7,7 +7,10 @@
     color: $color-font-primary;
     stroke: $color-font-primary;
     transition: all 0.2s;
-    margin-left: 4rem;
+    
+    &__nav {
+        margin-left: 4rem;
+    }
 
     &:hover {
         cursor: pointer;
@@ -25,7 +28,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .nav-list {
@@ -35,17 +38,28 @@
 }
 
 .nav-item {
+    text-decoration: none;
     font-family: $font-heading;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: -1px;
     color: $color-font-primary;
     transition: all 0.2s;
-    display: inline;
     margin: 0 1rem;
 
     &:hover {
         cursor: pointer;
         color: $color-primary;
     }
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
 }
