@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;700&family=Montserrat&family=Taviraj:wght@100&display=swap");
 .logo {
-  height: 50px;
+  height: 40px;
   width: auto;
-  margin: 1rem;
   fill: #EFE9F4;
   color: #EFE9F4;
   stroke: #EFE9F4;
   transition: all 0.2s;
+}
+.logo__nav {
+  margin-left: 4rem;
 }
 .logo:hover {
   cursor: pointer;
@@ -15,21 +17,63 @@
   stroke: #63b995;
 }
 
+.nav {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
 .nav-list {
   list-style: none;
+  padding: 0;
+  margin-right: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .nav-list li {
+    display: inline;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-list li {
+    display: block;
+  }
 }
 
 .nav-item {
+  text-decoration: none;
   font-family: "Hind Madurai", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: -1px;
   color: #EFE9F4;
   transition: all 0.2s;
+  margin: 0 1rem;
 }
 .nav-item:hover {
   cursor: pointer;
   color: #63b995;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+[aria-current] {
+  fill: #63b995;
+  color: #63b995;
+  stroke: #63b995;
 }
 
 body {

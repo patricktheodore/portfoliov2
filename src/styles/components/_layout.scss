@@ -1,0 +1,81 @@
+@use '../abstracts/' as *;
+
+.logo {
+    height: 40px;
+    width: auto;
+    fill: $color-font-primary;
+    color: $color-font-primary;
+    stroke: $color-font-primary;
+    transition: all 0.2s;
+    
+    &__nav {
+        margin-left: 4rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+        fill: $color-primary;
+        color: $color-primary;
+        stroke: $color-primary;
+    }
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin-right: 3rem;
+
+    li {
+        @media screen and (max-width: $small) {
+            display: inline;
+        }
+
+        @media screen and (max-width: $extra-small) {
+            display: block;
+        }
+    }
+}
+
+.nav-item {
+    text-decoration: none;
+    font-family: $font-heading;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -1px;
+    color: $color-font-primary;
+    transition: all 0.2s;
+    margin: 0 1rem;
+
+    &:hover {
+        cursor: pointer;
+        color: $color-primary;
+    }
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+[aria-current] {
+    fill: $color-primary;
+    color: $color-primary;
+    stroke: $color-primary;
+}
