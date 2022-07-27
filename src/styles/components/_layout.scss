@@ -35,6 +35,16 @@
     list-style: none;
     padding: 0;
     margin-right: 3rem;
+
+    li {
+        @media screen and (max-width: $small) {
+            display: inline;
+        }
+
+        @media screen and (max-width: $extra-small) {
+            display: block;
+        }
+    }
 }
 
 .nav-item {
@@ -62,4 +72,10 @@
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
+}
+
+[aria-current] {
+    fill: $color-primary;
+    color: $color-primary;
+    stroke: $color-primary;
 }

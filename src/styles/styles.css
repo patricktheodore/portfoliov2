@@ -33,6 +33,16 @@
   padding: 0;
   margin-right: 3rem;
 }
+@media screen and (max-width: 768px) {
+  .nav-list li {
+    display: inline;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-list li {
+    display: block;
+  }
+}
 
 .nav-item {
   text-decoration: none;
@@ -58,6 +68,12 @@
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+}
+
+[aria-current] {
+  fill: #63b995;
+  color: #63b995;
+  stroke: #63b995;
 }
 
 body {
