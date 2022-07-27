@@ -6,11 +6,14 @@ import Footer from "./Footer";
 import "../../styles/styles.css";
 
 const Layout: React.FC = (props: any) => {
-  let tl = gsap.timeline({ defaults: { ease: "power4.inOut", duration: 2 } });
+  // let tl = gsap.timeline({ defaults: { ease: "power4.inOut", duration: 1 } });
 
-  React.useEffect(() => {
-    tl.from(".nav", { opacity: 0 }).from(".footer", { opacity: 0 });
-  });
+  // React.useEffect(() => {
+  //   tl.from(".nav", { opacity: 0 }).from(".footer", {
+  //     opacity: 0,
+  //     delay: "-0.5",
+  //   });
+  // });
 
   return (
     <>
