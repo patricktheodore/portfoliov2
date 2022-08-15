@@ -1,7 +1,8 @@
 import * as React from "react";
 import "../styles/styles.css";
 import { gsap } from "gsap";
-import Layout from "../components/layout/Layout";
+import Nav from "../components/layout/Nav";
+import Footer from "../components/layout/Footer";
 
 const IndexPage = () => {
   let tl = gsap.timeline({ defaults: { ease: "power4.inOut", duration: 1 } });
@@ -15,7 +16,8 @@ const IndexPage = () => {
 
   return (
     <>
-      <Layout />
+      <Nav />
+      <Footer />
     </>
   );
 };

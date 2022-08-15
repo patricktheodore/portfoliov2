@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 
-.logo {
+.logo,
+.weather-icon {
     height: 40px;
     width: auto;
     fill: $color-font-primary;
@@ -78,4 +79,13 @@
     fill: $color-primary;
     color: $color-primary;
     stroke: $color-primary;
+}
+
+.weather-icon {
+    height: 50px;
+    margin-top: 2rem;
+
+    &:hover {
+        cursor: grab;
+    }
 }

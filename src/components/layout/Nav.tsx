@@ -2,6 +2,7 @@ import * as React from "react";
 import navData from "../../js/data/navLinks";
 import GatsbyLink from "../atoms/GatsbyLink";
 import LogoSVG from "../atoms/logoSVG";
+import WeatherCheck from "../organisms/WeatherCheck";
 
 interface ItemInterface {
   to: string;
@@ -25,6 +26,9 @@ const Nav: React.FC = () => {
         {navData.map((item) => {
           return navLinks(item);
         })}
+        <li key="weather-icon">
+          <WeatherCheck />
+        </li>
       </ul>
     </div>
   );

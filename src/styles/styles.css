@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;700&family=Montserrat&family=Taviraj:wght@100&display=swap");
-.logo {
+.logo,
+.weather-icon {
   height: 40px;
   width: auto;
   fill: #EFE9F4;
@@ -7,10 +8,12 @@
   stroke: #EFE9F4;
   transition: all 0.2s;
 }
-.logo__nav {
+.logo__nav,
+.weather-icon__nav {
   margin-left: 4rem;
 }
-.logo:hover {
+.logo:hover,
+.weather-icon:hover {
   cursor: pointer;
   fill: #63b995;
   color: #63b995;
@@ -74,6 +77,15 @@
   fill: #63b995;
   color: #63b995;
   stroke: #63b995;
+}
+
+.weather-icon {
+  height: 50px;
+  margin-top: 2rem;
+}
+.weather-icon:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 body {
